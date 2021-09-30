@@ -15,7 +15,7 @@ const Hero = () => {
                 />
               </div>
               <div className="mt-20">
-                <div>
+                {/* <div>
                   <a href="#" className="inline-flex space-x-4">
                     <span className="rounded bg-indigo-50 px-2.5 py-1 text-xs font-semibold text-indigo-600 tracking-wide uppercase">
                       What's new
@@ -28,7 +28,7 @@ const Hero = () => {
                       />
                     </span>
                   </a>
-                </div>
+                </div> */}
                 <div className="mt-6 sm:max-w-xl">
                   <h1 className="text-4xl font-bold text-gray-900 tracking-tight sm:text-5xl">
                     Evolve into your full potential with digital marketing &
@@ -41,7 +41,7 @@ const Hero = () => {
                     and flawless execution.
                   </p>
                 </div>
-                <form
+                {/* <form
                   action="#"
                   className="mt-12 sm:max-w-lg sm:w-full sm:flex"
                 >
@@ -64,7 +64,7 @@ const Hero = () => {
                       Notify me
                     </button>
                   </div>
-                </form>
+                </form> */}
               </div>
             </div>
           </div>

@@ -14,67 +14,67 @@ const features = [
   {
     name: 'Social Media',
     description:
-      'Etiam cras augue ornare pretium sit malesuada morbi orci, venenatis. Dictum lacus.',
+      'Build authentic connections with your audience through social media strategies. ',
   },
   {
     name: 'Content Marketing',
     description:
-      'Interdum quam pulvinar turpis tortor, egestas quis diam amet, natoque. Mauris sagittis.',
+      'Inform, entertain, and engage at every stage of the customer journey. ',
   },
   {
     name: 'CRO',
     description:
-      'Ullamcorper in ipsum ac feugiat. Senectus at aliquam vulputate mollis nec. In at risus odio.',
+      'Get the most out of your traffic by improving the site to generate more revenue. ',
   },
   {
     name: 'PPC / Paid Media',
     description:
-      'Magna a vel sagittis aliquam eu amet. Et lorem auctor quam nunc odio. Sed bibendum.',
+      'Eliminate wasteful ad spending with ads people actually want to see and are targeted appropriately. ',
   },
   {
     name: 'Influencer Marketing',
     description:
-      'Sed mi, dapibus turpis orci posuere integer. A porta viverra posuere adipiscing turpis.',
+      'Leverage the reach and credibility of your audience’s role models to increase brand awareness & drive sales. ',
   },
   {
     name: 'Affiliate Marketing',
     description:
-      'Quisque sapien nunc nisl eros. Facilisis sagittis maecenas id dignissim tristique proin sed.',
+      'Leverage highly motivated and well-known websites to drive revenue for your brand. ',
   },
   {
     name: 'Email Marketing',
     description:
-      'Tempor tellus in aliquet eu et sit nulla tellus. Suspendisse est, molestie blandit quis ac. Lacus.',
+      'Get remarkable results with email campaigns that people actually want to read and buy from. ',
   },
   {
     name: 'Partnerships',
     description:
-      'Ornare donec rhoncus vitae nisl velit, neque, mauris dictum duis. Nibh urna non parturient.',
+      'Creative, relationship-driven, strategic brand and celebrity campaigns to reach new audiences and expand marketing resources. ',
   },
   {
     name: 'Amazon',
     description:
-      'Etiam cras augue ornare pretium sit malesuada morbi orci, venenatis. Dictum lacus.',
+      'Expand your eCommerce empire on Amazon to reach an expanded segment of online shoppers. ',
   },
   {
     name: 'Paid Social Advertising',
     description:
-      'Interdum quam pulvinar turpis tortor, egestas quis diam amet, natoque. Mauris sagittis.',
+      'Reach vast new audiences and increase lifetime value through the power of expansive targeting criteria and highly targeted ads. ',
   },
   {
     name: 'Web Design & Development',
     description:
-      'Ullamcorper in ipsum ac feugiat. Senectus at aliquam vulputate mollis nec. In at risus odio.',
+      'Build an online experience that engages with customers, validates the brand, and drives revenue. ',
   },
   {
     name: 'Digital Creative, Design, & Rapid Ad Creative',
     description:
-      'Magna a vel sagittis aliquam eu amet. Et lorem auctor quam nunc odio. Sed bibendum.',
+      'Masterfully designed ad creative and impactful campaigns that drive high engagement to maximize revenue. ',
   },
   {
     name: 'Diligence (PE/VC)',
     description:
-      'Sed mi, dapibus turpis orci posuere integer. A porta viverra posuere adipiscing turpis.',
+      'Confirm which brands present the strongest digital growth opportunities, minimize risk, and scale existing portfolio clients. ',
   },
 ]
 
