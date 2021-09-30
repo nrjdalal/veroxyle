@@ -10,10 +10,10 @@ const user = {
   //   'https://tailwindcss.com/_next/static/media/tailwindcss-logotype.128b6e12eb85d013bc9f80a917f57efe.svg',
 }
 const navigation = [
-  { name: 'Testimonials', href: '#', current: false },
-  { name: 'Potential', href: '#', current: false },
-  { name: 'Features', href: '#', current: false },
-  { name: 'Services', href: '#', current: false },
+  // { name: 'Testimonials', href: '#', current: false },
+  // { name: 'Potential', href: '#', current: false },
+  // { name: 'Features', href: '#', current: false },
+  // { name: 'Services', href: '#', current: false },
 ]
 const userNavigation = [
   // { name: 'Your Profile', href: '#' },
@@ -34,7 +34,7 @@ const Navbar = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex justify-between h-16">
                 <div className="flex">
-                  <div className="-ml-2 mr-2 flex items-center md:hidden">
+                  <div className="hidden -ml-2 mr-2 items-center">
                     {/* Mobile menu button */}
                     <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                       <span className="sr-only">Open main menu</span>
@@ -50,13 +50,13 @@ const Navbar = () => {
                   </div>
                   <div className="flex-shrink-0 flex items-center">
                     <img
-                      className="block lg:hidden h-8 w-auto"
-                      src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.cb8046c163f77190406dfbf4dec89848.svg"
+                      className="block lg:hidden h-6 w-auto"
+                      src="https://raw.githubusercontent.com/nrjdalal/veroxyle-alfa/main/public/logo.svg"
                       alt="Workflow"
                     />
                     <img
-                      className="hidden lg:block h-8 w-auto"
-                      src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.cb8046c163f77190406dfbf4dec89848.svg"
+                      className="hidden lg:block h-6 w-auto"
+                      src="https://raw.githubusercontent.com/nrjdalal/veroxyle-alfa/main/public/logo.svg"
                       alt="Workflow"
                     />
                   </div>
