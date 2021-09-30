@@ -16,7 +16,7 @@ const features = [
   {
     name: 'Technology',
     icon: LockClosedIcon,
-    description: `Get customized reports for each team member involved, benefit from realtime digital strategy shifts fueled by machine learning, and dominate your space with the power of nova - our proprietary technology platform.`,
+    description: `Get customized reports for each team member involved, benefit from realtime digital strategy shifts fueled by machine learning, and dominate your space.`,
   },
   {
     name: 'Difference',
@@ -36,7 +36,7 @@ const Cards = () => {
           </p>
 
           <div className="mt-12">
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
               {features.map((feature) => (
                 <div key={feature.name} className="pt-6">
                   <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full">
