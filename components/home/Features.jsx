@@ -49,7 +49,7 @@ const Features = () => {
             {features.map((feature) => (
               <div key={feature.name}>
                 <div>
-                  <span className="flex items-center justify-center h-12 w-12 rounded-md bg-gray-600 bg-opacity-10">
+                  <span className="flex items-center justify-center h-12 w-12 rounded-md bg-gray-900 bg-opacity-10">
                     <feature.icon
                       className="h-6 w-6 text-gray-900"
                       aria-hidden="true"

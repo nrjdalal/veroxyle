@@ -108,7 +108,7 @@ const Testimonials = () => {
                       <div className="text-base font-medium text-gray-900">
                         Tim Trzepacz
                       </div>
-                      <div className="text-base font-medium text-indigo-600">
+                      <div className="text-base font-medium text-cyan-500">
                         Director of Commercial Operations, Victrola
                       </div>
                     </div>
@@ -131,7 +131,7 @@ const Testimonials = () => {
                       <div className="text-base font-medium text-gray-900">
                         Jenny Craig
                       </div>
-                      <div className="text-base font-medium text-indigo-600">
+                      <div className="text-base font-medium text-cyan-500">
                         CMO, Jenny Craig
                       </div>
                     </div>
@@ -154,7 +154,7 @@ const Testimonials = () => {
                       <div className="text-base font-medium text-gray-900">
                         Allison Jones
                       </div>
-                      <div className="text-base font-medium text-indigo-600">
+                      <div className="text-base font-medium text-cyan-500">
                         VP Marketing, BHHS California
                       </div>
                     </div>

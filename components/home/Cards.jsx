@@ -42,7 +42,7 @@ const Cards = () => {
                   <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full">
                     <div className="-mt-6">
                       <div>
-                        <span className="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                        <span className="inline-flex items-center justify-center p-3 bg-cyan-500 rounded-md shadow-lg">
                           <feature.icon
                             className="h-6 w-6 text-white"
                             aria-hidden="true"
