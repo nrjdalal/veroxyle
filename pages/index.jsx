@@ -4,6 +4,7 @@ import Testimonials from 'components/home/Testimonials'
 import Cards from 'components/home/Cards'
 import Features from 'components/home/Features'
 import Services from 'components/home/Services'
+import Contact from 'components/home/Contact'
 
 const index = () => {
   return (
@@ -14,6 +15,7 @@ const index = () => {
       <Cards />
       <Features />
       <Services />
+      <Contact />
     </>
   )
 }
