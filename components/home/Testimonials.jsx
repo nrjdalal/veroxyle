@@ -74,8 +74,8 @@ const Testimonials = () => {
           <div className="relative lg:flex lg:items-center">
             <div className="hidden lg:block lg:flex-shrink-0">
               <img
-                className="h-64 w-64 rounded-full xl:h-80 xl:w-80"
-                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                className="h-64 w-64 rounded-full xl:h-80 xl:w-80 object-cover"
+                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80"
                 alt=""
               />
             </div>
@@ -96,10 +96,10 @@ const Testimonials = () => {
               <blockquote className="relative">
                 <div className="text-2xl leading-9 font-medium text-gray-900">
                   <p>
-                    The results have been incredible. With Power Digital, it
-                    feels like they’re in our trench, supporting and
-                    understanding us. They’re like a partner and mentor in
-                    helping us get where we want to be.
+                    The results have been incredible. With VeroXyle, it feels
+                    like they’re in our trench, supporting and understanding us.
+                    They’re like a partner and mentor in helping us get where we
+                    want to be.
                   </p>
                 </div>
                 <footer className="mt-8">
@@ -142,10 +142,10 @@ const Testimonials = () => {
               <blockquote className="relative pt-8">
                 <div className="text-2xl leading-9 font-medium text-gray-900">
                   <p>
-                    Power Digital helps us stand out from the competition. They
-                    bring us new ideas and strategies outside of traditional
-                    real estate marketing and really make us push that envelope
-                    to do things differently.
+                    VeroXyle helps us stand out from the competition. They bring
+                    us new ideas and strategies outside of traditional real
+                    estate marketing and really make us push that envelope to do
+                    things differently.
                   </p>
                 </div>
                 <footer className="mt-8">
