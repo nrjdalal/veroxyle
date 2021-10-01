@@ -10,6 +10,7 @@ import Contact from 'components/home/Contact'
 import Navbar from 'components/home/Navbar'
 
 const index = () => {
+
   return (
     <>
       <Head>
