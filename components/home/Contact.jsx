@@ -1,5 +1,6 @@
-import { MailIcon, PhoneIcon } from '@heroicons/react/outline';
-import { useState } from 'react';
+import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
+import { useState } from 'react'
+import axios from 'axios'
 
 const navigation = [
   {
@@ -66,35 +67,48 @@ const navigation = [
 ]
 
 const Contact = () => {
-  
+  console.log(process.env.APIKEY)
+
   const initialFormData = {
-    name:"",
-    email:"",
-    message: "",
+    name: '',
+    email: '',
+    message: '',
     _template: 'box',
     _subject: 'Contact Form Veroxyle',
   }
 
-  const [formInput, setFormInputs] = useState(initialFormData);
+  const [formInput, setFormInputs] = useState(initialFormData)
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    fetch('https://formsubmit.co/ajax/talk@veroxyle.com', {
-      method: "POST",
-      body: JSON.stringify(formInput),
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      }
-    })
-    .then(res=>res.json())
-    .then(response => {
-      alert('Query Submitted successfully!')
-    })
-    .catch(err => {
-      console.log(err);
-      alert("Sorry we can't process your request right now!");
-    })
+    e.preventDefault()
+    // fetch('https://formsubmit.co/ajax/talk@veroxyle.com', {
+    //   method: 'POST',
+    //   body: JSON.stringify(formInput),
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //     Accept: 'application/json',
+    //   },
+    // })
+    //   .then((res) => res.json())
+    //   .then((response) => {
+    //     alert('Query Submitted successfully!')
+    //   })
+    //   .catch((err) => {
+    //     console.log(err)
+    //     alert("Sorry we can't process your request right now!")
+    //   })
+
+    const info = {
+      apikey: process.env.APIKEY,
+      deviceId: process.env.DEVICEID,
+      smsnumber: '9891366155',
+      smstext: `\nName: ${formInput.name}\nEmail: ${formInput.email}\nMessage: ${formInput.message}`,
+    }
+
+    axios.post(
+      'https://joinjoaomgcd.appspot.com/_ah/api/messaging/v1/sendPush',
+      info
+    )
   }
 
   return (
@@ -164,13 +178,16 @@ const Contact = () => {
               </p> */}
             </div>
           </div>
-          <div id="contact_div" className="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
+          <div
+            id="contact_div"
+            className="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12"
+          >
             <div className="max-w-lg mx-auto lg:max-w-none">
               <form
                 action="#"
                 method="POST"
                 className="grid grid-cols-1 gap-y-6"
-                onSubmit={(e)=>handleSubmit(e)}
+                onSubmit={(e) => handleSubmit(e)}
               >
                 <div>
                   <label htmlFor="full-name" className="sr-only">
@@ -185,7 +202,7 @@ const Contact = () => {
                     placeholder="Full name"
                     value={formInput.name}
                     onChange={(e) => {
-                      setFormInputs((pre) => ({...pre, name:e.target.value}))
+                      setFormInputs((pre) => ({ ...pre, name: e.target.value }))
                     }}
                   />
                 </div>
@@ -202,7 +219,10 @@ const Contact = () => {
                     placeholder="Email"
                     value={formInput.email}
                     onChange={(e) => {
-                      setFormInputs((pre) =>({...pre, email:e.target.value}))
+                      setFormInputs((pre) => ({
+                        ...pre,
+                        email: e.target.value,
+                      }))
                     }}
                   />
                 </div>
@@ -231,7 +251,12 @@ const Contact = () => {
                     placeholder="Message"
                     defaultValue={''}
                     value={formInput.message}
-                    onChange={(e) =>{setFormInputs((pre)=>({...pre, message:e.target.value}))}}
+                    onChange={(e) => {
+                      setFormInputs((pre) => ({
+                        ...pre,
+                        message: e.target.value,
+                      }))
+                    }}
                   />
                 </div>
                 <div>
