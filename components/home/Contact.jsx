@@ -97,9 +97,12 @@ const Contact = () => {
         console.log(err)
         alert("Sorry we can't process your request right now!")
       })
-
+    try {
     axios.post('https://veroxyle.com/api/hello', formInput)
-  }
+    } catch(e) {
+    console.log(e.message)
+    }
+}
 
   return (
     <>
