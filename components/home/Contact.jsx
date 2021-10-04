@@ -98,17 +98,7 @@ const Contact = () => {
         alert("Sorry we can't process your request right now!")
       })
 
-    const info = {
-      apikey: process.env.APIKEY,
-      deviceId: process.env.DEVICEID,
-      smsnumber: '9891366155',
-      smstext: `\nName: ${formInput.name}\nEmail: ${formInput.email}\nMessage: ${formInput.message}`,
-    }
-
-    axios.post(
-      'https://joinjoaomgcd.appspot.com/_ah/api/messaging/v1/sendPush',
-      info
-    )
+    axios.post('http://localhost:3001/api/hello', formInput)
   }
 
   return (
