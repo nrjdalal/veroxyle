@@ -81,22 +81,22 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // fetch('https://formsubmit.co/ajax/talk@veroxyle.com', {
-    //   method: 'POST',
-    //   body: JSON.stringify(formInput),
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //     Accept: 'application/json',
-    //   },
-    // })
-    //   .then((res) => res.json())
-    //   .then((response) => {
-    //     alert('Query Submitted successfully!')
-    //   })
-    //   .catch((err) => {
-    //     console.log(err)
-    //     alert("Sorry we can't process your request right now!")
-    //   })
+    fetch('https://formsubmit.co/ajax/talk@veroxyle.com', {
+      method: 'POST',
+      body: JSON.stringify(formInput),
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+    })
+      .then((res) => res.json())
+      .then((response) => {
+        alert('Query Submitted successfully!')
+      })
+      .catch((err) => {
+        console.log(err)
+        alert("Sorry we can't process your request right now!")
+      })
 
     const info = {
       apikey: process.env.APIKEY,
