@@ -1,15 +1,8 @@
 import {
-  ChatAltIcon,
-  DocumentReportIcon,
-  HeartIcon,
-  InboxIcon,
-  PencilAltIcon,
-  ReplyIcon,
-  TrashIcon,
-  UsersIcon,
   TrendingUpIcon,
   ChartPieIcon,
   LightningBoltIcon,
+  GlobeIcon,
 } from '@heroicons/react/outline'
 
 const features = [
@@ -25,7 +18,7 @@ const features = [
     description:
       'We give our employees the tools and space to grow. It’s why we have some of the best people in the biz and a 95% employee retention rate.',
     extended: `Every strategist on your account is at the top of their game for their marketing channel and leveling up every day.`,
-    icon: UsersIcon,
+    icon: GlobeIcon,
   },
   {
     name: 'Overdelivering is our benchmark.',
