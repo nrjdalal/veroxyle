@@ -1,10 +1,6 @@
 import {
   CloudUploadIcon,
-  CogIcon,
-  LockClosedIcon,
   RefreshIcon,
-  ServerIcon,
-  ShieldCheckIcon,
   ChipIcon,
 } from '@heroicons/react/outline'
 
