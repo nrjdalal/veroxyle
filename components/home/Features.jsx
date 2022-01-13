@@ -9,6 +9,7 @@ import {
   UsersIcon,
   TrendingUpIcon,
   ChartPieIcon,
+  LightningBoltIcon,
 } from '@heroicons/react/outline'
 
 const features = [
@@ -38,7 +39,7 @@ const features = [
     description:
       'You’re partnering with consultants and strategists, not a team of “Yes Men”.',
     extended: `If something isn’t making sense, we’ll push back. And the results will make you glad we did.`,
-    icon: PencilAltIcon,
+    icon: LightningBoltIcon,
   },
 ]
 
