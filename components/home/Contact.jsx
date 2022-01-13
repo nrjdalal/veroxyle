@@ -98,11 +98,11 @@ const Contact = () => {
         alert("Sorry we can't process your request right now!")
       })
     try {
-    axios.post('https://veroxyle.com/api/hello', formInput)
-    } catch(e) {
-    console.log(e.message)
+      axios.post('https://veroxyle.com/api/hello', formInput)
+    } catch (e) {
+      console.log(e.message)
     }
-}
+  }
 
   return (
     <>
@@ -110,9 +110,9 @@ const Contact = () => {
         <div className="absolute inset-0">
           <div className="absolute inset-y-0 left-0 w-1/2 bg-gray-50" />
         </div>
-        <div className="relative max-w-7xl mx-auto lg:grid lg:grid-cols-5">
-          <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
-            <div className="max-w-lg mx-auto">
+        <div className="relative mx-auto max-w-7xl lg:grid lg:grid-cols-5">
+          <div className="px-4 py-16 bg-gray-50 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
+            <div className="max-w-[700px] mx-auto">
               <h2 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
                 How Can We Help You?
               </h2>
@@ -138,7 +138,7 @@ const Contact = () => {
                   <dt className="sr-only">Phone number</dt>
                   <dd className="flex">
                     <PhoneIcon
-                      className="flex-shrink-0 h-6 w-6 text-gray-400"
+                      className="flex-shrink-0 w-6 h-6 text-gray-400"
                       aria-hidden="true"
                     />
                     <a href="tel:+91 9999 373 188" className="ml-3">
@@ -150,7 +150,7 @@ const Contact = () => {
                   <dt className="sr-only">Email</dt>
                   <dd className="flex">
                     <MailIcon
-                      className="flex-shrink-0 h-6 w-6 text-gray-400"
+                      className="flex-shrink-0 w-6 h-6 text-gray-400"
                       aria-hidden="true"
                     />
                     <a
@@ -173,9 +173,9 @@ const Contact = () => {
           </div>
           <div
             id="contact_div"
-            className="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12"
+            className="px-4 py-16 bg-white sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12"
           >
-            <div className="max-w-lg mx-auto lg:max-w-none">
+            <div className="max-w-[700px] mx-auto lg:max-w-none">
               <form
                 action="#"
                 method="POST"
@@ -191,7 +191,7 @@ const Contact = () => {
                     name="full-name"
                     id="full-name"
                     autoComplete="name"
-                    className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-cyan-500 focus:border-cyan-500 border-gray-300 rounded-md"
+                    className="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:ring-cyan-500 focus:border-cyan-500"
                     placeholder="Full name"
                     value={formInput.name}
                     onChange={(e) => {
@@ -208,7 +208,7 @@ const Contact = () => {
                     name="email"
                     type="email"
                     autoComplete="email"
-                    className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-cyan-500 focus:border-cyan-500 border-gray-300 rounded-md"
+                    className="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:ring-cyan-500 focus:border-cyan-500"
                     placeholder="Email"
                     value={formInput.email}
                     onChange={(e) => {
@@ -228,7 +228,7 @@ const Contact = () => {
                     name="phone"
                     id="phone"
                     autoComplete="tel"
-                    className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-cyan-500 focus:border-cyan-500 border-gray-300 rounded-md"
+                    className="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:ring-cyan-500 focus:border-cyan-500"
                     placeholder="Phone"
                   />
                 </div> */}
@@ -240,7 +240,7 @@ const Contact = () => {
                     id="message"
                     name="message"
                     rows={4}
-                    className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-cyan-500 focus:border-cyan-500 border border-gray-300 rounded-md"
+                    className="block w-full px-4 py-3 placeholder-gray-500 border border-gray-300 rounded-md shadow-sm focus:ring-cyan-500 focus:border-cyan-500"
                     placeholder="Message"
                     defaultValue={''}
                     value={formInput.message}
@@ -255,7 +255,7 @@ const Contact = () => {
                 <div>
                   <button
                     type="submit"
-                    className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-cyan-600 hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
+                    className="inline-flex justify-center px-6 py-3 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-cyan-600 hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
                   >
                     Submit
                   </button>
@@ -267,7 +267,7 @@ const Contact = () => {
       </div>
 
       <footer className="bg-gray-900">
-        <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 md:flex md:items-center md:justify-center lg:px-8">
+        <div className="px-4 py-6 mx-auto max-w-7xl sm:px-6 md:flex md:items-center md:justify-center lg:px-8">
           {/* <div className="flex justify-center space-x-6 md:order-2">
             {navigation.map((item) => (
               <a
@@ -276,12 +276,12 @@ const Contact = () => {
                 className="text-gray-400 hover:text-gray-500"
               >
                 <span className="sr-only">{item.name}</span>
-                <item.icon className="h-6 w-6" aria-hidden="true" />
+                <item.icon className="w-6 h-6" aria-hidden="true" />
               </a>
             ))}
           </div> */}
           <div className="mt-8 md:mt-0 md:order-1">
-            <p className="text-center text-base text-gray-400">
+            <p className="text-base text-center text-gray-400">
               &copy; 2020 VeroXyle. All rights reserved.
             </p>
           </div>
