@@ -1,5 +1,4 @@
 import 'styles/globals.css'
-import Script from 'next/scripts'
 
 function MyApp({ Component, pageProps }) {
   return (
